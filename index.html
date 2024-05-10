@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Hangman</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="https://mitchum.blog/wp-content/uploads/2019/05/favicon.png"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Jahaziel Hangman</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://mitchum.blog/how-to-build-hangman-with-javascript/"
+              >Back To Blog</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="hangman-container">
+        <img
+          id="hangmanImage"
+          src="https://mitchum.blog/games/hangman/img/hangman0.png"
+          alt="Hangman Image"
+        />
+      </div>
+      <div id="word"></div>
+      <div id="controls">
+        <input
+          type="text"
+          id="guessBox"
+          placeholder="Guess a letter or the whole word"
+        />
+        <button id="guessWordButton" class="button" onclick="guessWord(game)">
+          Guess
+        </button>
+        <button id="newGameButton" class="button" onclick="newGame()">
+          New Game
+        </button>
+      </div>
+      <div id="guesses"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
